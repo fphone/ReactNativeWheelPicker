@@ -16,6 +16,7 @@ android {
         versionName "1.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
+        }
     }
 }
 
@@ -23,6 +24,6 @@ dependencies {
     def supportLibVersion = rootProject.hasProperty('supportLibVersion') ? rootProject.supportLibVersion : DEFAULT_SUPPORT_LIB_VERSION
 
     implementation "com.android.support:appcompat-v7:$supportLibVersion"
-    compileOnly 'com.facebook.react:react-native:+'
+    compileOnly 'com.facebook.react:react-native:0.19.+'
     implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.3'
 }
